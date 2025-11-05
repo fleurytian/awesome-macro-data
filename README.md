@@ -27,6 +27,14 @@ US Government Shutdown Financial Data Analysis Tool
 
 每个时期的数据包含停摆前一年和停摆后一年的数据，用于对比分析。
 
+## ⚠️ 重要提示
+
+**如果您在Docker/云环境中遇到 `403 Access denied` 错误**，即使使用有效的API密钥，这是因为FRED可能限制了某些云服务器IP的访问。
+
+**✅ 解决方案：请在本地计算机（Windows/Mac/Linux）上运行此脚本。**
+
+详见 → [本地运行指南](LOCAL_RUN_GUIDE.md)
+
 ## 🚀 快速开始
 
 ### 1. 获取 FRED API 密钥 (免费)
