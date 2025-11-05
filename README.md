@@ -37,13 +37,21 @@ US Government Shutdown Financial Data Analysis Tool
 4. 填写简单的申请表单
 5. 立即获得免费的 API 密钥
 
-### 2. 安装依赖
+### 2. (可选) 测试 API 密钥
+
+```bash
+python test_api_key.py YOUR_API_KEY_HERE
+```
+
+这会验证您的API密钥是否有效并显示示例数据。
+
+### 3. 安装依赖
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. 运行脚本
+### 4. 运行脚本
 
 ```bash
 python fetch_shutdown_data_final.py YOUR_API_KEY_HERE
@@ -114,7 +122,10 @@ openpyxl>=3.1.0
 ## 🔍 故障排除
 
 ### 问题: 403 Forbidden 错误
-**解决方案**: 确保使用的是有效的 FRED API 密钥。
+**解决方案**:
+1. 确保使用的是有效的 FRED API 密钥
+2. 运行测试脚本验证：`python test_api_key.py YOUR_API_KEY`
+3. 如果密钥无效，请重新申请：https://fred.stlouisfed.org/docs/api/api_key.html
 
 ### 问题: No data fetched
 **解决方案**:
