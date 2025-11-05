@@ -1,0 +1,39 @@
+# Generated Excel files
+*.xlsx
+*.xls
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test scripts (keeping only the final version)
+fetch_shutdown_data.py
+fetch_shutdown_data_v2.py
+fetch_shutdown_data_web.py
+
+# Logs
+*.log
+
+# API keys (if stored in files)
+.env
+secrets.txt
+api_key.txt
